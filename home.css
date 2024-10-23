@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'gilroy'; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Upper Navbar Section Start */
+
+#upper-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #030c53;
+    border-bottom: 2px solid white;
+    height: 1vw;
+}
+
+#contact-info {
+    display: flex;
+}
+
+#contact-info h3 {
+    padding: 0 5px;
+    font-size: 0.8vw;
+    color: white;
+}
+
+#social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0 3px;
+}
+
+/* Upper Navbar Section End ----------------------------------------------------------------------------*/
+
+
+
+
+/* Nav Bar Section Starts */
+
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 10px 0;
+    background: #ca0606;
+    height: 3vw;
+    align-items: center;
+}
+
+#nav #logo-block img {
+    height: 50px;
+    height: 2.5vw;
+}
+
+#nav #buttons-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%;
+    /* gap: 3%; */
+}
+
+#nav #buttons-block a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+
+
+
+
+#courses-dropdown {
+    display: inline-block;
+}
+
+#courses-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#courses-dropdown:hover #courses-dropdown-buttons {
+    display: block;
+}
+
+#courses-dropdown-buttons {
+    width: 8%;
+    position: absolute;
+    display: none;
+}
+
+#courses-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    min-width: 100px;
+}
+
+#courses-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+
+#nba-cet-dropdown {
+    display: inline-block;
+}
+
+#nba-cet-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#nba-cet-dropdown:hover #nba-cet-dropdown-buttons {
+    display: block;
+}
+
+#nba-cet-dropdown-buttons {
+    width: 8%;
+    position: absolute;
+    display: none;
+}
+
+#nba-cet-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#nba-cet-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+
+#more-dropdown {
+    display: inline-block;
+}
+
+#more-dropdown:hover #more-dropdown-buttons {
+    display: block;
+}
+
+#more-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#more-dropdown-buttons {
+    position: absolute;
+    display: none;
+    width: 8%;
+}
+
+#more-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#more-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+#quote-button {
+    background: #07377e;
+    padding: 7px 15px;
+    border-radius: 35px;
+}
+
+/* Nav Bar Section Ends ---------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Main Section starts here */
+
+
+#main-section {
+    height: calc(100% - 6vw);
+    background: #07377e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-section {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25%;
+}
+
+#start-section h1 {
+    font-size: 3.5vw;
+    color: white;
+
+}
+
+#start-section #start-button {
+    font-size: 0.9vw;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: 'gilroy';
+    background: #e77e32;
+    transition: 0.5s;
+}
+
+#start-section #start-button:hover {
+    cursor: pointer;
+    transition: 1s;
+    color: #004583;
+    background-color: #FFFFFF;
+}
+/* Main Section Ends here-------------------------------------------------------------------------------------------------------------------- */

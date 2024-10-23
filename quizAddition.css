@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'gilroy'; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Upper Navbar Section Start */
+
+#upper-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #030c53;
+    border-bottom: 2px solid white;
+    height: 1vw;
+}
+
+#contact-info {
+    display: flex;
+}
+
+#contact-info h3 {
+    padding: 0 5px;
+    font-size: 0.8vw;
+    color: white;
+}
+
+#social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0 3px;
+}
+
+/* Upper Navbar Section End ----------------------------------------------------------------------------*/
+
+
+
+
+/* Nav Bar Section Starts */
+
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 10px 0;
+    background: #ca0606;
+    height: 3vw;
+    align-items: center;
+}
+
+#nav #logo-block img {
+    height: 50px;
+    height: 2.5vw;
+}
+
+#nav #buttons-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%;
+    /* gap: 3%; */
+}
+
+#nav #buttons-block a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+
+
+
+
+#courses-dropdown {
+    display: inline-block;
+}
+
+#courses-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#courses-dropdown:hover #courses-dropdown-buttons {
+    display: block;
+}
+
+#courses-dropdown-buttons {
+    width: 8%;
+    position: absolute;
+    display: none;
+}
+
+#courses-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    min-width: 100px;
+}
+
+#courses-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+
+#nba-cet-dropdown {
+    display: inline-block;
+}
+
+#nba-cet-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#nba-cet-dropdown:hover #nba-cet-dropdown-buttons {
+    display: block;
+}
+
+#nba-cet-dropdown-buttons {
+    width: 8%;
+    position: absolute;
+    display: none;
+}
+
+#nba-cet-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#nba-cet-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+
+#more-dropdown {
+    display: inline-block;
+}
+
+#more-dropdown:hover #more-dropdown-buttons {
+    display: block;
+}
+
+#more-dropdown button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+#more-dropdown-buttons {
+    position: absolute;
+    display: none;
+    width: 8%;
+}
+
+#more-dropdown-buttons a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 5px 5px;
+    background: rgb(237, 237, 235);
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#more-dropdown-buttons a:hover {
+    background: rgb(210, 208, 208);
+}
+
+
+#quote-button {
+    background: #07377e;
+    padding: 7px 15px;
+    border-radius: 35px;
+}
+
+/* Nav Bar Section Ends ---------------------------------------------------------------------------------------------------------------*/
+
+/* main section starts here */
+
+#main-section {
+    width: 100%;
+    height: 87.1%;
+    background: #07377e;
+    display: flex;
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-section {
+    display: flex;
+    width: 65%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff8a;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.517);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(208, 213, 221, 0.75);
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+#upper-timer-section {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    /* background: red; */
+    
+}
+
+#quiz-name {
+    
+    margin: 0 0px 0 20px;
+    padding: 0 10px 0 0;
+}
+
+#timer-section {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 20px;
+    padding: 0 5px 0 0;
+}
+
+#timer-section i {
+    font-size: 1.5vw;
+    background: #f58d42;
+    padding: 10px;
+    border-right: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#timer-section h2 {
+    margin-left: 10px;
+}
+
+#question-container {
+    height: 85%;
+    background: rgba(236, 236, 44, 0.637);
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+#question {
+    font-size: 2.2vw;
+    justify-self: center;
+    line-height: 4.2vw;
+}
+
+#options-container {
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 0;
+}
+
+#options-container #option-a,
+#option-b,
+#option-c,
+#option-d {
+    background: rgb(224, 221, 221);
+    font-family: 'gilroy';
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+
+}
+
+
+#answer-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: yellowgreen; */
+    height: 8vw;
+    margin-top: 30px;
+    /* gap: 50px; */
+}
+
+#answer-input #options-instruction label {
+    font-size: 1.2vw;
+}
+
+#answer-input #options-instruction input {
+    font-size: 1.2vw;
+    width: 60px;
+}
+
+#answer-input #submit-button button {
+    font-size: 0.9vw;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: 'gilroy';
+    background: #e77e32;
+    transition: 0.5s;
+}
+
+#quiz-result{
+    background: #767272;
+    width: 100%;
+    height: 70%;
+    align-content: center;
+    justify-items: center;
+}
+
+#quiz-result 
+h2
+{
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+
+#correct-count,
+#wrong-count,
+#time-taken{
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+
+/* main section Ends here ------------------------------------------------------------------*/
+
+
